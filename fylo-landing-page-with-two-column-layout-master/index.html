@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca:wght@300;700&family=Outfit&family=Raleway&family=Red+Hat+Display:wght@500&display=swap');
+    .nav{
+      width:100%;
+      height:10px;
+      margin-top:2%;
+      display:flex
+    }
+    .img1{
+      margin-left: 2%;
+      flex:70%;
+    }
+    .hi{
+      flex:5%;
+      font-family: 'Raleway', sans-serif;
+      color: black;
+      opacity: 0.5;
+    }
+    .content{
+      margin-top: 5%;
+      display: flex;
+  
+    }
+    .info{
+      margin-top: 10%;
+      
+      display: flex;
+      background-image: url("images/bg-curve-desktop.svg");
+      background-attachment: fixed;
+      background-position:top;
+      background-repeat:repeat-y;
+      background-size: cover;
+     
+    
+    }
+  .content-left{
+    flex:70%;
+    width:50%;
+    height: 500px;
+    background-image: url("images/illustration-1.svg");
+    float: right;
+background-size: cover;
+  background-repeat:no-repeat
+  }
+
+  .info-left{
+   
+    flex:70%;
+    width:50%;
+    height: 500px;
+    background-image: url("images/illustration-2.svg");
+    float: right;
+  background-size:contain;
+  background-repeat: no-repeat;
+  }
+  .content-right{
+    flex: 60%;
+  }
+  
+.content1{
+  margin-left: 5%;
+  margin-right: 28%;
+  line-height: 50px;
+  
+  word-spacing: 2px;
+}
+.content3{
+  margin-left: 5%;
+  margin-right: 20%;
+  line-height: 50px;
+  
+  word-spacing: 2px;
+}
+.content2{
+  margin-left: 5%;
+  margin-right: 25%;
+ line-height: 25px;
+  font-weight:400;
+  word-spacing: 2px;
+}
+
+.form{
+  display: flex;
+}
+.form1{
+  margin-top: 10%;
+}
+.start-left{
+flex:40%;
+}
+.start-right{
+  flex:75%;
+}
+.link{
+  display: flex;
+}
+a{
+  margin-left: 5%;
+  color:  hsl(170, 45%, 43%);
+}
+#email{
+  flex:50%;
+  margin-left: 5%;
+  padding-right: 20%;
+  padding-bottom: 2%;
+
+}
+.email1{
+  margin-left: 5%;
+  margin-top: 10%;
+  
+  padding-right: 70%;
+  padding-bottom: 2%;
+}
+#button{
+  flex: 30%;
+  margin-left: 5%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  background-color: hsl(224, 93%, 58%);
+  color: aliceblue;
+  border-radius: 5%;
+  display: table-cell;
+  vertical-align: middle;;
+}
+#button1{
+  flex: 30%;
+  margin-left: 5%;
+  margin-top:5% ;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  background-color: hsl(224, 93%, 58%);
+  color: aliceblue;
+  border-radius: 5%;
+  display: table-cell;
+  vertical-align: middle;
+  box-shadow: rgba(96, 94, 109, 0.15) 0px 48px 100px 0px;
+}
+.card{
+  height:275px;
+  width: 45%;
+ 
+  margin-top: 7%;
+  margin-left: 5%;
+  margin-right: 20%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.img2{
+  margin-top: 10%;
+  margin-left: 7%;
+}
+.content4{
+  margin-left: 5%;
+  margin-right: 5%;
+ line-height: 25px;
+  font-weight:400;
+  word-spacing: 2px;
+}
+.person{
+  display: flex;
+}
+.avatar{
+  width:10%;
+  height: 10%;
+  border-radius: 50%;
+  margin-left: 5%;
+}.name{
+  flex:90%;
+  margin-left: 5%;
+  display: block;
+}
+.start{
+  height:275px;
+  width: 1410px;
+  background-color: hsl(238, 22%, 44%);
+  margin-top: 5%;
+  opacity: 0.9;
+  display: flex;
+}
+.start-content{
+  color: aliceblue;
+  margin-left: 10%;
+  flex:50%;
+  margin-top: 5%;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.content5{
+  color: aliceblue;
+  word-spacing: 5px;
+  margin-right:45%;
+  margin-left: 10%;
+  line-height: 25px;
+}
+.footer{
+  height:350px;
+  width: 1410px;
+  background-color: hsl(243, 87%, 12%);
+}
+.img3{
+  margin-top: 5%;
+  margin-left: 5%;
+ fill: aliceblue;
+}
+.footer1{
+  height:300px;
+  width: 1410px;
+  display: flex;
+  color: white;
+  opacity: 0.7;
+  
+}
+.items{
+flex:50%;
+margin-top: 2%;
+margin-left: 5%;
+display: inline-block;
+}
+.emailimg{
+  margin-top: 5%;
+}
+.about{
+flex:50%;
+
+}
+.contact{
+flex:50%;
+}
+.social{
+flex:50%;
+}
+  </style>
+</head>
+<body>
+  <div class="nav">
+  <span class="img1"><img  style ="width:100px"src="images/logo.svg"></span>
+  <span class="hi">
+    Features
+  </span>
+  <span class="hi">
+    Team
+  </span>
+  <span class="hi">
+    Sign In
+  </span>
+  </div>
+  <div class="content">
+    
+    <div class="content-right">
+  
+      <h1 class="content1"> All your files in one secure 
+        location, accessible anywhere.</h1>
+      <p class ="content2">
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.</p>
+        <form  class="form">
+          
+          <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+       <button id ="button">Get Started</button>
+        </form>
+    </div>
+    <div class="content-left">
+    
+
+    </div>
+  </div>
+</div>
+<div class= "info">
+  
+  <div class="info-right">
+<h1 class="content3">Stay productive, wherever you are</h1>
+
+<p class="content2">
+Never let location be an issue when accessing your files. Fylo has you 
+covered for all of your file storage needs.
+</p>
+<p class="content2"> Securely share files and folders with friends, family and colleagues for 
+live collaboration. No email attachments required!
+</p>
+<div class="link">
+<a href="#">  See how Fylo works</a>
+<img src="images/icon-arrow.svg">
+</div>
+
+<div class="card">
+ <img  class ="img2"src="images/icon-quotes.svg">
+ <p class="content4">
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.</p>
+<div class="person">
+<img  class ="avatar" src="images/avatar-testimonial.jpg">
+<div class="name">
+  <span><h4>Kyle Burton</h4></span>
+  <span><p>Founder & CEO, Huddle</p></span>
+</div>
+</div>
+  </div>
+
+</div>
+<div class="info-left"></div>
+  </div>
+  <div class="start">
+    <div class="start-right">
+<h2 class="start-content">
+
+  Get early access today
+</h2>
+<p class="content5">It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.</p>
+    </div>
+    <div class="start-left">
+      <form  class="form1">
+          
+      <div> <input type="email1" id="email" name="email" placeholder="Enter your e-mail"></div>
+    <div><button id ="button1">Get Started</button></div>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <img  class="img3" src="images/logo.svg">
+    <div class =footer1>
+      <div class="items">
+        <div><span><img src="images/icon-phone.svg">phone: +1-543-123-4567</span></div>
+        <div class="emailimg"><span><img src="images/icon-email.svg">example@fylo.com</span></div>
+      </div>
+      <div class="about">
+        <div class="emailimg">
+          About Us
+        </div>
+        <div class="emailimg">
+          Jobs
+          
+        </div>
+        <div class="emailimg">
+         
+          Press
+          
+        </div>
+      <div class="emailimg">
+        
+        Blog
+      </div>
+      </div>
+      <div class="contact">
+        <div class="emailimg">
+          Contact Us
+        </div>
+        <div class="emailimg">
+         
+          Terms
+        </div>
+        <div class="emailimg">
+         
+          Privacy
+          
+        </div>
+      </div>
+      <div class="social">
+        <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="50" height="50"
+          viewBox="0 0 226 226"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M113,13.56c-54.918,0 -99.44,44.522 -99.44,99.44c0,49.8556 36.725,91.01924 84.57824,98.21056v-71.85444h-24.60236v-26.13916h24.60236v-17.39296c0,-28.79692 14.03008,-41.43936 37.96348,-41.43936c11.46272,0 17.52404,0.84976 20.39424,1.23848v22.81696h-16.32624c-10.16096,0 -13.70916,9.63212 -13.70916,20.48916v14.28772h29.77776l-4.04088,26.13916h-25.73688v72.06688c48.53576,-6.58564 85.97944,-48.08376 85.97944,-98.423c0,-54.918 -44.522,-99.44 -99.44,-99.44z"></path></g></g></svg></span>
+      <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="50" height="50"
+        viewBox="0 0 226 226"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M72.32,13.56c-32.39717,0 -58.76,26.36283 -58.76,58.76v81.36c0,32.39717 26.36283,58.76 58.76,58.76h81.36c32.39717,0 58.76,-26.36283 58.76,-58.76v-81.36c0,-32.39717 -26.36283,-58.76 -58.76,-58.76zM72.32,22.6h81.36c27.51091,0 49.72,22.20909 49.72,49.72v81.36c0,27.51091 -22.20909,49.72 -49.72,49.72h-81.36c-27.51091,0 -49.72,-22.20909 -49.72,-49.72v-81.36c0,-27.51091 22.20909,-49.72 49.72,-49.72zM167.24,49.72c-4.99265,0 -9.04,4.04735 -9.04,9.04c0,4.99265 4.04735,9.04 9.04,9.04c4.99265,0 9.04,-4.04735 9.04,-9.04c0,-4.99265 -4.04735,-9.04 -9.04,-9.04zM113,63.28c-27.40606,0 -49.72,22.31394 -49.72,49.72c0,27.40606 22.31394,49.72 49.72,49.72c27.40606,0 49.72,-22.31394 49.72,-49.72c0,-27.40606 -22.31394,-49.72 -49.72,-49.72zM113,72.32c22.52048,0 40.68,18.15952 40.68,40.68c0,22.52048 -18.15952,40.68 -40.68,40.68c-22.52048,0 -40.68,-18.15952 -40.68,-40.68c0,-22.52048 18.15952,-40.68 40.68,-40.68z"></path></g></g></svg></span>
+      <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="50" height="50"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M117.7125,18.8125c-20.57281,0 -37.3025,16.72969 -37.3025,37.3025c0,1.23625 0.30906,2.44563 0.43,3.655c-25.43719,-2.43219 -47.93156,-14.68719 -63.21,-33.4325c-0.71219,-0.90031 -1.81406,-1.38406 -2.96969,-1.30344c-1.14219,0.08062 -2.16344,0.73906 -2.72781,1.73344c-3.21156,5.52281 -5.0525,11.87875 -5.0525,18.705c0,8.26406 2.95625,15.82938 7.525,22.0375c-0.88687,-0.38969 -1.85437,-0.60469 -2.6875,-1.075c-1.06156,-0.56437 -2.33812,-0.5375 -3.37281,0.08063c-1.03469,0.61812 -1.66625,1.73344 -1.67969,2.92937v0.43c0,12.67156 6.5575,23.67688 16.2325,30.4225c-0.1075,-0.01344 -0.215,0.02688 -0.3225,0c-1.1825,-0.20156 -2.37844,0.215 -3.17125,1.11531c-0.79281,0.90031 -1.04812,2.15 -0.69875,3.29219c3.84313,11.94594 13.6525,21.07 25.8,24.4025c-9.675,5.75125 -20.89531,9.1375 -33.0025,9.1375c-2.62031,0 -5.13312,-0.13437 -7.6325,-0.43c-1.6125,-0.215 -3.15781,0.72563 -3.69531,2.2575c-0.55094,1.53188 0.05375,3.23844 1.43781,4.085c15.52031,9.95719 33.94313,15.8025 53.75,15.8025c32.10219,0 57.28406,-13.41062 74.175,-32.5725c16.89094,-19.16187 25.6925,-44.04812 25.6925,-67.295c0,-0.98094 -0.08062,-1.935 -0.1075,-2.9025c6.30219,-4.82406 11.9325,-10.48125 16.34,-17.0925c0.87344,-1.27656 0.77938,-2.98312 -0.22844,-4.16562c-0.99438,-1.1825 -2.67406,-1.54531 -4.07156,-0.88688c-1.77375,0.79281 -3.84312,0.87344 -5.6975,1.505c2.44563,-3.26531 4.54188,-6.78594 5.805,-10.75c0.43,-1.35719 -0.04031,-2.84875 -1.15562,-3.73562c-1.11531,-0.87344 -2.67406,-0.98094 -3.89688,-0.24188c-5.87219,3.48031 -12.37594,5.92594 -19.2425,7.4175c-6.665,-6.235 -15.43969,-10.4275 -25.2625,-10.4275zM117.7125,25.6925c8.77469,0 16.70281,3.74906 22.2525,9.675c0.83313,0.86 2.05594,1.22281 3.225,0.9675c4.48813,-0.88687 8.74781,-2.19031 12.9,-3.87c-2.39187,3.225 -5.34812,5.97969 -8.815,8.0625c-1.57219,0.76594 -2.31125,2.58 -1.73344,4.23281c0.56437,1.63937 2.28437,2.59344 3.99094,2.21719c3.44,-0.41656 6.50375,-1.81406 9.7825,-2.6875c-2.94281,3.18469 -6.16781,6.06031 -9.675,8.6c-0.95406,0.69875 -1.47812,1.8275 -1.3975,3.01c0.05375,1.3975 0.1075,2.78156 0.1075,4.1925c0,21.5 -8.25062,44.84094 -23.9725,62.6725c-15.72187,17.83156 -38.8075,30.315 -69.015,30.315c-13.71969,0 -26.67344,-3.03687 -38.3775,-8.385c14.5125,-1.11531 27.89625,-6.24844 38.7,-14.7275c1.12875,-0.90031 1.57219,-2.40531 1.11531,-3.77594c-0.45688,-1.37063 -1.72,-2.31125 -3.15781,-2.35156c-11.34125,-0.20156 -20.84156,-6.79937 -25.9075,-16.125c0.18813,0 0.34938,0 0.5375,0c3.39969,0 6.75906,-0.43 9.89,-1.29c1.505,-0.44344 2.53969,-1.84094 2.48594,-3.41312c-0.05375,-1.57219 -1.16906,-2.91594 -2.70094,-3.25188c-12.24156,-2.4725 -21.41937,-12.44312 -23.5425,-24.8325c3.46688,1.19594 7.01438,2.13656 10.8575,2.2575c1.57219,0.09406 2.99656,-0.88687 3.48031,-2.37844c0.48375,-1.49156 -0.1075,-3.13094 -1.43781,-3.96406c-8.17,-5.46906 -13.545,-14.78125 -13.545,-25.37c0,-3.92375 1.02125,-7.525 2.365,-10.965c17.2,18.87969 41.28,31.41688 68.4775,32.7875c1.075,0.05375 2.12313,-0.38969 2.82188,-1.20937c0.69875,-0.83313 0.9675,-1.935 0.72562,-2.98313c-0.52406,-2.23062 -0.86,-4.59562 -0.86,-6.9875c0,-16.85062 13.57188,-30.4225 30.4225,-30.4225z"></path></g></g></svg></span>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Features
+  Team
+  Sign In
+
+  All your files in one secure location, accessible anywhere.
+
+  Fylo stores your most important files in one secure location. 
+  Access them wherever you need, share and collaborate with friends, 
+  family, and co-workers.
+
+  Get Started
+
+  Stay productive, wherever you are
+
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>
