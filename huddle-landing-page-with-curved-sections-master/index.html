@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .container{
+   
+     
+      position: relative;
+      padding-left: 5%;
+      padding-top:5% ;
+      
+    }
+    nav{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+    .button{
+      padding: 20px 40px;
+      margin-right: 10%;
+      border-radius: 30px;
+      background-color:  white;
+      font-weight: 700;
+      color: hsl(322, 100%, 66%);
+      
+      border-width: 2px;
+      border-style: solid;
+      border-color: initial;
+      
+      box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    }
+    .flex{
+     padding-left: 10%;
+     padding-right: 20%;
+      margin-top: 5%;
+      font-size: 1.5em;
+   
+     
+
+    }
+   
+    .flex1{
+      padding-left: 10%;
+      padding-right: 20%;
+      
+       font-size: 1.5em;
+    background-color: hsl(207, 100%, 98%) ;
+      display: flex;
+    }
+    .flex2{
+      padding-left: 10%;
+      padding-right: 20%;
+       margin-top: 5%;
+       font-size: 1.5em;
+  
+      display: flex;
+    
+    }
+    img{
+      max-width: 100%;
+    }
+  
+    .p{
+      padding-left: 2%;
+font-weight: 400;
+padding-right: 15%;
+line-height: 35px;
+font-size: 1.20em;
+
+text-align: center;
+    }
+    .box2{
+      border-radius: 50px;
+      background-color: hsl(322, 100%, 66%);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 60px;
+      color:white;
+    }
+    .box{
+      padding: 10px 10px ;
+      background-color: hsl(322, 100%, 66%);
+      border-radius: 20px;
+      margin:auto;
+      margin-left: 20%;
+      margin-right: 30%;
+      padding-left: 10%;
+      color:white;
+      font-size: 1.1em;
+    
+     
+    }
+    .mockup{
+    padding:  80px 60px;
+    }
+    .container1{
+      
+     
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 2000px;
+    }
+ 
+    .card{
+     
+     
+  margin: 0%;
+      width: 100%;
+   padding: 0%;
+    }
+    .card2{
+     
+     
+  
+      width: 100%;
+      
+    }
+   .card1{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 7%;
+    margin:auto;
+    margin-top: 10%;
+    width: 60%;
+   }
+
+    .p1{
+      margin-right:5%;
+      line-height: 35px;
+      opacity: 0.5;
+      font-size: 1.2em;
+      font-weight: 500;
+      
+    }
+    .img{
+      margin-left:10%;
+    }
+    .text{
+      margin-left:20%;
+    }
+   
+    footer{
+     
+    
+      background-color:  hsl(192, 100%, 9%);
+
+  width:100%;
+  color: white;
+  position: absolute;
+  margin-bottom: 0;
+    }
+   
+    .logo{
+      filter: brightness(0) invert(1);
+     margin-top: 5%;
+    
+    }
+   .img2{
+     width:50%;
+     height: 50%;
+     margin-left: 20%;
+   }
+ 
+    footer ul {
+      list-style-type: none;
+      padding-left: 0px;
+      padding-right: 20%;
+      
+    }
+    
+ 
+    footer ul li {
+      margin-bottom: 20px;
+      margin-right: 3%;
+   
+    }
+    
+    footer .social-media {
+      display: flex;
+     
+      
+    }
+  
+    .container3{
+      display: flex;
+    }
+    .contain{
+      flex:70%;
+      margin-left: 5%;
+    }
+    .news{
+      flex:50%;
+    }
+  
+    footer p {
+      text-align: right;
+    }
+    .fa-facebook {
+     
+      color: white;
+    }
+    .box1{
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+      margin: 40px 0;
+      padding: 60px;
+    }
+   
+    
+  .center {
+    text-align: center;
+}
+.container2 {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
+.news{
+  margin-left: 50%;
+  margin-top: 0%;
+}
+.news p{
+text-align: left;
+margin-right: 40%;
+}
+.news button{
+  background-color: hsl(322, 100%, 66%);
+  color:white;
+  padding: 5px 20px;
+}
+.img4{
+  margin-bottom: -10px;
+  width:100%;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <nav>
+<img src="images/logo.svg" alt="logo">
+<div class="button">Try it Free</div>
+  </nav>
+  <div class ="flex">
+    <div>
+      <h1>
+        Build The Community 
+       Your Fans Will Love
+      </h1>
+      <p class="p"> Huddle re-imagines the way we build communities. You have a voice,
+         but so does your audience. 
+        Create connections with
+         your users as you engage in genuine discussion.
+      </p>
+      <div class ="box"> Get Started For Free</div>
+    </div>
+<div > 
+  <img class="mockup"src="images/screen-mockups.svg">
+</div>
+  </div>
+</div>
+<div class="stats">
+  <div class="pep">
+  
+  </div>
+  <div class="mill"></div>
+</div>
+<div class="container1">
+  <div class="card">
+    <img  class="img4"src="images/bg-section-top-desktop-1.svg">
+    <div class ="flex1">
+      <div>
+        <h1>
+         
+  Grow Together</h1>
+         
+        <p class="p1"> Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. 
+        </p>
+       
+      </div>
+  <div > 
+    <img  class="img" src="images/illustration-grow-together.svg">
+  </div>
+    </div>
+    <img src="images/bg-section-bottom-desktop-1.svg">
+  </div>
+  <div class="card2">
+    <div class ="flex2">
+      <div > 
+        <img  class="img" src="images/illustration-flowing-conversation.svg">
+      </div>
+      <div class="text">
+        <h1>
+          Flowing Conversations
+
+  </h1>
+         
+        <p class="p1"> You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+          have just-in-time loading for a more natural flow.
+        
+        </p>
+       
+      </div>
+  
+    </div>
+  </div>
+    
+  <div class="card">
+    <img  class="img4" src="images/bg-section-top-desktop-2.svg">
+    <div class ="flex1  ">
+      <div>
+        <h1>
+         
+          Your Users</h1>
+         
+        <p class="p1"> It takes no time at all to integrate Huddle with your app's authentication solution. 
+          This means, once signed in to your app, your users can start chatting immediately.
+        </p>
+       
+      </div>
+   
+    <img  class="img img2" src="images/illustration-your-users.svg">
+  </div>
+  <img src="images/bg-section-bottom-desktop-2.svg">
+    </div>
+    
+    <div > 
+  </div>
+</div>
+<div class="container2 center">
+  <div class="box1 small-box">
+    <h2>Ready To Build Your Community?</h2>
+    <div class ="box2"> Get Started For Free</div>
+  </div>
+</div>
+
+
+  
+ 
+<div><img  class="img4" src="images/bg-footer-top-desktop.svg"></div>
+  <footer>
+  <div class="container3">
+   
+<div class="contain">
+  <div> <img  class="logo" src="images/logo.svg"></div>
+<div class="flex-align">
+  <ul>
+    <li class="what"> Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua</li>
+    <li><img src="images/icon-phone.svg"> +1-543-123-4567</li>
+    <li><img src="images/icon-email.svg"> example@huddle.com</li>
+
+  <ul class="social-media">
+    <li>
+      <a class="circle" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="32" height="32"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,35.9265 26.4665,65.5965 60.9525,70.778v-51.78633h-17.73033v-18.84117h17.73033v-12.5345c0,-20.75467 10.11217,-29.8635 27.36233,-29.8635c8.26317,0 12.62767,0.60917 14.69883,0.88867v16.44033h-11.76767c-7.32433,0 -9.88283,6.9445 -9.88283,14.7705v10.2985h21.46417l-2.90967,18.84117h-18.54733v51.93683c34.9805,-4.73717 61.963,-34.65083 61.963,-70.9285c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667z"></path></g></g></svg>
+      </a>
+    </li>
+    <li>
+      <a class="circle" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="32" height="32"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M157.66667,28.6595c-5.59,3.31817 -16.80583,7.84033 -23.39917,9.14467c-0.1935,0.05017 -0.35117,0.11467 -0.5375,0.16483c-5.8265,-5.74767 -13.81017,-9.3095 -22.64667,-9.3095c-17.80917,0 -32.25,14.44083 -32.25,32.25c0,0.93883 -0.07883,2.666 0,3.58333c-24.02983,0 -42.31917,-12.58467 -55.43417,-28.66667c-1.42617,3.58333 -2.04967,9.245 -2.04967,14.56267c0,10.0405 7.8475,19.90183 20.06667,26.015c-2.25033,0.5805 -4.73,0.99617 -7.31,0.99617c-4.16383,0 -8.57133,-1.0965 -12.60617,-4.42183c0,0.12183 0,0.2365 0,0.3655c0,14.03233 14.89233,23.5855 28.13633,26.24433c-2.6875,1.58383 -8.1055,1.7415 -10.75,1.7415c-1.86333,0 -8.45667,-0.85283 -10.21967,-1.1825c3.68367,11.5025 16.97067,17.96683 29.63417,18.19617c-9.90433,7.76867 -16.77717,10.64967 -37.05883,10.64967h-6.90867c12.814,8.213 29.1325,14.3405 45.48683,14.3405c53.24833,0 83.51317,-40.58483 83.51317,-78.8405c0,-0.61633 -0.01433,-1.90633 -0.03583,-3.2035c0,-0.129 0.03583,-0.25083 0.03583,-0.37983c0,-0.1935 -0.05733,-0.37983 -0.05733,-0.57333c-0.0215,-0.97467 -0.043,-1.88483 -0.0645,-2.35783c5.66167,-4.085 10.57083,-9.1805 14.45517,-14.9855c-5.19583,2.30767 -10.7715,3.85567 -16.62667,4.558c5.977,-3.58333 14.4695,-12.126 16.62667,-18.89133z"></path></g></g></svg>
+      </a>
+    </li>
+    <li>
+      <a class="circle" href="#">
+       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M51.31446,10.75c-22.33984,0 -40.56446,18.22461 -40.56446,40.56446v58.66308c0,22.29785 18.22461,40.52246 40.56446,40.52246h58.66308c22.29785,0 40.52246,-18.2246 40.52246,-40.56445v-58.62109c0,-22.33984 -18.2246,-40.56446 -40.56445,-40.56446zM51.31446,21.5h58.62109c16.54492,0 29.81445,13.26953 29.81445,29.81446v58.62109c0,16.54492 -13.26953,29.81445 -29.77246,29.81445h-58.66308c-16.54493,0 -29.81446,-13.26953 -29.81446,-29.77246v-58.66308c0,-16.54493 13.26953,-29.81446 29.81446,-29.81446zM123.625,32.25c-2.98145,0 -5.375,2.39355 -5.375,5.375c0,2.98145 2.39355,5.375 5.375,5.375c2.98145,0 5.375,-2.39355 5.375,-5.375c0,-2.98145 -2.39355,-5.375 -5.375,-5.375zM80.625,43c-20.70215,0 -37.625,16.92285 -37.625,37.625c0,20.70215 16.92285,37.625 37.625,37.625c20.70215,0 37.625,-16.92285 37.625,-37.625c0,-20.70215 -16.92285,-37.625 -37.625,-37.625zM80.625,53.75c14.90723,0 26.875,11.96777 26.875,26.875c0,14.90723 -11.96777,26.875 -26.875,26.875c-14.90723,0 -26.875,-11.96777 -26.875,-26.875c0,-14.90723 11.96777,-26.875 26.875,-26.875z"></path></g></g></svg>
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="news">
+<h1> Newsletter</h1>
+<p> To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+  send you spam or pass on your email address</p>
+<input type="text">
+<button>Submit</button>
+</div>
+  </div>
+  <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+</footer>
+  </body>
+  </html>
