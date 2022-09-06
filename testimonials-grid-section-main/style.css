@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Inter:wght@700&family=Lexend+Deca:wght@300;700&family=Outfit&family=Raleway&family=Red+Hat+Display:wght@500&display=swap');
+body{
+    background-color:  hsl(210, 46%, 95%);
+font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+#container{
+    width:100%;
+    height:720px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    justify-content: space-around;
+
+ 
+  }
+  .last{
+ float:right;
+ width:25%;
+ height: 100%;
+ border-radius: 10px;
+ background-color: white;
+ 
+ 
+  }
+  .firstrow,.secondrow{
+    display: flex;
+    width:75%;
+    height: 50%;
+    margin-top: 2%;
+  }
+  .first{
+    width:50%;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+ 
+   flex:50%;
+   height:95%;
+    background-color: hsl(263, 55%, 52%);
+    margin-right: 3%;
+    border-radius: 10px;
+  }
+  .second{
+    width:30%;
+    height:95%;
+    background-color: hsl(217, 19%, 35%);
+    margin-right: 3%;
+    border-radius: 10px;
+  }
+  .third{
+   width:30%;
+   height:95%;
+   background-color: white;
+   margin-right: 3%;
+   border-radius: 10px;
+  }
+  .fourth{
+   width:50%;
+   height:95%;
+       flex:50%;
+    background-color: hsl(219, 29%, 14%);
+    margin-right: 3%;
+    border-radius: 10px;
+  }
+
+  
+  .profile{
+    display: flex;
+    margin-top: 3%;
+  }
+.text2{
+  margin-left:7%;
+  margin-right: 7%;
+  color: white;
+  line-height: 20px;
+
+  }
+  .text3{
+    margin-left: 7%;
+    margin-right: 7%;
+    line-height: 20px;
+    margin-top:10%;
+  }
+  .text3 p{
+      margin-top: 10%;
+  }
+  .text4{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 25px;
+  margin-top:5%;
+ 
+  
+  }
+  h2{
+      opacity: 0.9;
+      line-height: 30px;
+  }
+  p{
+      opacity: 0.5;
+   
+  }
+  .group1{
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  .group{
+ margin-top: 1%;
+ margin-left: 3%;
+ color:white;
+  }
+  .person{
+      border: 2px solid white;
+      border-radius:50%;
+      width:5%;
+      height: 5%;
+      margin-left: 5%;
+      margin-top: 2%;
+     
+  }
+.person2{
+    width:10%;
+      height: 10%;
+      border-radius:50%;
+      margin-left: 5%;
+      margin-top: 2%;
+}
+  .text{
+      margin-top: 5%;
+      margin-bottom: 2px;
+      opacity: 0.8;
+      
+  }
+  .gap{
+      margin-top: 0px;
+      opacity: 0.5;
+      
+  }
+  
