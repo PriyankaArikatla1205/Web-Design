@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Inter:wght@700&family=Lexend+Deca:wght@300;700&family=Outfit&family=Raleway&family=Red+Hat+Display:wght@500&display=swap');
+body{
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center bottom;
+    font-family: 'Raleway', sans-serif;
+   
+}
+.container{
+    height:200px;
+    width:60%;
+  
+    
+    margin: auto;
+    display: flex;
+    margin-top: 20%;
+
+
+
+}
+.p{
+    color: rgb(216, 211, 211);
+    padding: auto;
+    margin-top: 9%;
+    margin-left: 8%;
+    font-size: 14px;
+    word-spacing: 20%;
+    opacity: 0.5;
+ 
+}
+
+.box1{
+    width:30%;
+    height: 110%;
+    flex:50%;
+    margin-left: 10%;
+   margin-right: 3%;
+
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 50% 10px 10px;
+
+
+}
+.logo{
+ padding: 40px;
+}
+.folder{
+    display: flex;
+    padding-left: 25px;
+}
+.folder img{
+    width:50%;
+    height: 50%;
+    flex:30%;
+   margin-top: 10px;
+   margin-left: 12px;
+}
+.box3{
+    width:50px;
+    height: 50px;
+    background-color: hsl(229, 57%, 11%);
+    margin-left: 5%;
+   border-radius: 10px;
+}
+.box2{
+    height: 80%;
+    
+    flex:70%;
+    margin-top: 5%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+}
+.bar{
+    width:80%;
+    height:12px;
+    background-color: hsl(229, 57%, 11%);
+   border-radius: 50px;
+    margin: auto;
+    margin-top: 7%;
+
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+ color: white;
+
+}
+
+.p1{
+    float: right;
+    margin-left: 20%;
+}
+.bar1{
+    width:75%;
+    height:12px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+}
+.circle{
+    width:5%;
+    height:12px;
+    border-radius: 100%;
+    float: right;
+    background-color: azure;
+}
+
+.box5{
+    width:40%;
+    float: right;
+    height: 70px;
+    margin-top: -60px;
+    margin-right: 10%;
+    padding: auto;
+    padding-top: 20px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0% 10px;
+   
+   
+}
+b{
+    font-weight: bolder;
+    font-size: 20px;
+    font-size: x-large;
+  
+
+}
+.b{
+    font-weight: bolder;
+    padding-top: 20%;
+    margin-left: 10%;
+    font-size: 20px;
+    font-size: x-large;
+}
+.p3{
+    color: black;
+    margin-top: 5%;
+    margin-left: 10%;
+    
+font-size: medium;
+font-weight: bold;
+display: inline;
+}
