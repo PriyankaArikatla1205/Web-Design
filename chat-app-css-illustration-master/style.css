@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Inter:wght@700&family=Lexend+Deca:wght@300;700&family=Outfit&family=Raleway&family=Red+Hat+Display:wght@500&family=Rubik&display=swap');
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: smaller;
+}
+.contain{
+    display: flex;
+}
+.container{
+ 
+    width:30%;
+    height:700px;
+    margin-top: -2%;
+    margin-left: -9%;
+    background-image:linear-gradient( hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius:0 0 250px 250px;
+}
+.phone{
+    width:25%;
+    height: 650px;
+    margin-top:5%;
+    border-radius: 30px;
+    border: 10px solid white;
+    background-color: hsl(270, 20%, 96%);
+    margin-left: -30px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.head{
+    margin-bottom: 0;
+    width:100%;
+    height: 90px;
+    background-image:linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 30px 30px 10px 10px;
+}
+button{
+    margin-top: 0%;
+    padding:15px 90px;
+    margin-left: 17%;
+    border-radius: 20px;
+    background-color: white;
+    border: solid hsl(270, 20%, 96%);
+}
+.text{
+    flex:50%;
+    padding: auto;
+    margin: auto;
+    margin-left: 20%;
+    
+   
+}
+.head1 img:first-child{
+    width:10%;
+    height: 10%;
+    padding: 15px;
+    border-radius: 50%;
+    
+}
+.avatar {
+    margin-top: 5%;
+    width:10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+h4{
+    color: white;
+}
+.text p{
+    word-spacing: 10px;
+    font-size: 20px;
+    margin-right: 10%;
+   color:  hsl(270, 7%, 64%);
+}
+h1{
+    font-size: 50px;
+    color:hsl(271, 15%, 43%);
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+ width:60%;
+ height:30px;
+
+ margin: auto;
+ padding: auto;
+ margin-top: 4%;
+
+
+}
+.one,.two,.six,.seven,.eight{
+
+    border-radius: 10px 10px 10px 0;
+    padding: 0% 0% 5% 5%;
+}
+.three,.four,.five{
+    border-radius: 10px 10px 0 10px;
+    margin-right: 2%;
+    padding: 0% 5% 5% 5%;
+}
+.three,.seven,.eight{
+    display: flex;
+    padding: 0% 5% 5% 5%;
+}
+.three{
+    height: 50px;
+}
+.three img{
+    flex:50%;
+    margin-left: 4%;
+    border-radius: 10px;
+}
+.seven,.eight{
+    justify-content: space-around;
+    background-image:linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    color: white;
+    margin-top: 5%;
+    margin-left: 2%;
+    
+}
+.seven div,.eight div{
+    text-align:center;
+    margin-top:5%;
+}
+.five{
+    height:30px ;
+  
+}
+.four,.five{
+    background-color: white;
+    text-align: justify;
+    
+  
+}
+.one,.two,.six
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    color:  hsl(276, 55%, 52%);
+    background-color: hsl(206, 6%, 79%);
+   
+}
+.head1{
+    display: flex ;
+}
+.btn{
+    margin-top: 5%;
+    margin-left: 3%;
+    width:95%;
+    height:40px;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(206, 6%, 79%);
+    justify-content: space-between;
+}
+.btn p{
+    text-align: center ;
+    align-items: baseline;
+}
+.submit{
+   margin-top: 2%;
+   margin-right: 5%;
+    width:15%;
+    height:30px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 60%;
+    color: white;
+}
+.submit img{
+    padding-left: 5px;
+}
+
